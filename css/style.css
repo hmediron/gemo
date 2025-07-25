@@ -373,3 +373,70 @@ body {
 .off {
     display: none;
 }
+
+
+/* ========== Responsive for Tablets ========== */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .product {
+    padding: 10px;
+  }
+
+  .product img {
+    width: 100%;
+    height: auto;
+  }
+
+  .product h2 {
+    font-size: 1rem;
+  }
+
+  .product .price {
+    font-size: 0.9rem;
+  }
+
+  .addToCart {
+    padding: 8px 10px;
+    font-size: 0.85rem;
+  }
+}
+
+/* ========== Responsive for Mobile ========== */
+@media (max-width: 480px) {
+  .products {
+    grid-template-columns: 1fr;
+  }
+
+  .header h1 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .product {
+    text-align: center;
+  }
+
+  .cart {
+    width: 100%;
+    position: relative;
+    right: 0;
+    margin-top: 20px;
+  }
+
+  .order {
+    width: 100%;
+  }
+
+  .last-order {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
